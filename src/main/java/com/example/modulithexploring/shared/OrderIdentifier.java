@@ -1,2 +1,6 @@
-package com.example.modulithexploring.shared;public record OrderIdentifier() {
+package com.example.modulithexploring.shared;
+
+import java.util.UUID;
+
+public record OrderIdentifier(UUID id) {
 }

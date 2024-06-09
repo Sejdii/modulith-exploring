@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.modulith.test.ApplicationModuleTest;
 
 @ApplicationModuleTest
-class CreateOrderServiceTestIT {
+class CreateOrderServiceModuleTestIT {
 
     @Autowired
     private CreateOrderService createOrderService;

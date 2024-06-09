@@ -1,10 +1,11 @@
 package com.example.modulithexploring;
 
 import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.modulith.core.ApplicationModules;
 
-@Log
+@Slf4j
 class ModularityTest {
 
     private final ApplicationModules applicationModules = ApplicationModules.of(ModulithExploringApplication.class);
@@ -16,6 +17,6 @@ class ModularityTest {
 
     @Test
     void shouldDisplayAllModules() {
-        applicationModules.forEach(applicationModule -> log.info("Module: " + applicationModule));
+        applicationModules.forEach(applicationModule -> log.info("Module: {}", applicationModule));
     }
 }

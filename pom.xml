@@ -44,6 +44,12 @@
             <artifactId>jmolecules-ddd</artifactId>
             <version>1.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.jmolecules</groupId>
+            <artifactId>jmolecules-hexagonal-architecture</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
