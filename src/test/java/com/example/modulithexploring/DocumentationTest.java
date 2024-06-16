@@ -1,6 +1,5 @@
-package com.example.modulithexploring.order.application.domain.service;
+package com.example.modulithexploring;
 
-import com.example.modulithexploring.ModulithExploringApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.modulith.core.ApplicationModules;
 import org.springframework.modulith.docs.Documenter;
@@ -13,7 +12,8 @@ class DocumentationTest {
     void writeDocumentationSnippets() {
 
         new Documenter(modules)
-                .writeModulesAsPlantUml()
-                .writeIndividualModulesAsPlantUml();
+            .writeModulesAsPlantUml()
+            .writeModuleCanvases()
+            .writeIndividualModulesAsPlantUml();
     }
 }
